@@ -47,7 +47,7 @@ public class Login_Test extends BrowserSetup {
 
 	@DataProvider(name= "SupplyTestData")
 	public Object [][] SupplyTestData() throws IOException{
-		Object[][] data = {{"hemangmahajani10@gmail.com","12345"},{"hemangmahajani09@gmail.com","123456"}};
+		Object[][] data = {{"hemangmahajani10@gmail.com","12345"},{"Hemang2642IS@gmail.com","12345"}};
 		
 		return data;
 				
