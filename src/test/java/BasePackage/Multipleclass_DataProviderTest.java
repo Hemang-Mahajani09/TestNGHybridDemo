@@ -1,16 +1,18 @@
 package BasePackage;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.AssertJUnit;
+import org.testng.asserts.*;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Multipleclass_DataProvider {
+public class Multipleclass_DataProviderTest {
+SoftAssert softassert = new SoftAssert();
 
-	@Test(dataProvider= "TestDataforlogin", dataProviderClass = dataproviderclass.class)
+	@Test( dataProvider= "TestDataforlogin", dataProviderClass = dataprovider1.class)
 
 	public void readfromdataprovider( String URL, String email, String password) /* (String[] str) */
 	{
@@ -25,7 +27,7 @@ public class Multipleclass_DataProvider {
 		driver.findElement(By.id("input-email")).sendKeys(email); //str[1]
 		driver.findElement(By.id("input-password")).sendKeys(password); // str[0]
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
-		AssertJUnit.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
+		softassert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
 		System.out.println(URL + " "+ email + " "+ password);
 		driver.quit();
 	}

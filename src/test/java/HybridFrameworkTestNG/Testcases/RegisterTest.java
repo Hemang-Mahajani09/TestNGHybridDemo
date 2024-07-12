@@ -62,7 +62,7 @@ public class RegisterTest extends BrowserSetup {
 		driver.findElement(By.name("agree")).click();
 		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		String AccountCreatedVerification =driver.findElement(By.xpath("//div[@id = 'content']/h1")).getText();
-		Assert.assertEquals(AccountCreatedVerification, "Your Account Has Been Created!", "Account not Created");	
+		softassert.assertEquals(AccountCreatedVerification, "Your Account Has Been Created!", "Account not Created");	
 		}
 
 
@@ -84,7 +84,7 @@ public class RegisterTest extends BrowserSetup {
 		driver.findElement(By.name("agree")).click();
 		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		String AccountCreatedVerification =driver.findElement(By.xpath("//div[@id = 'content']/h1")).getText();
-		Assert.assertEquals(AccountCreatedVerification, "Your Account Has Been Created!", "Account not Created");				
+		softassert.assertEquals(AccountCreatedVerification, "Your Account Has Been Created!", "Account not Created");				
 		}
 	
 
@@ -103,7 +103,7 @@ public class RegisterTest extends BrowserSetup {
 		driver.findElement(By.name("agree")).click();
 		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		String actualwarning = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
-		Assert.assertTrue(actualwarning.contains("Warning: E-Mail Address is already registered!"),"Warning message is not displayed");
+		softassert.assertTrue(actualwarning.contains("Warning: E-Mail Address is already registered!"),"Warning message is not displayed");
 	
 		}
 
@@ -115,6 +115,6 @@ public class RegisterTest extends BrowserSetup {
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		String warning = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
-		Assert.assertTrue(warning.contains("Warning: You must agree to the Privacy Policy!"),"Warning message is not displayed");
+		softassert.assertTrue(warning.contains("Warning: You must agree to the Privacy Policy!"),"Warning message is not displayed");
 		}
 }
