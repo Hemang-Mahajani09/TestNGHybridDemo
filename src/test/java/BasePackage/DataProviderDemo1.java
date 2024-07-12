@@ -27,7 +27,7 @@ public class DataProviderDemo1 {
 		public void readvalidparameter( @Optional String URL ,String validemail, String validpassword )
 		{
 			
-		driver = new ChromeDriver();
+		    driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			
 			
@@ -42,19 +42,18 @@ public class DataProviderDemo1 {
 			driver.findElement(By.xpath("//a[normalize-space()='Edit your account information']"));
 			
 			softassert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
-<<<<<<< HEAD
+
 			driver.quit();
-=======
-			
->>>>>>> 43e85b074e7065c69d2f125ef6c7383cfc83c617
+
+
 			
 		}
 		@Parameters({"url", "invalidemail", "validpassword"})
 		@Test
 		public void readinvalidparameter(@Optional String URL, String invalidemail, String validpassword)
 		{
-			WebDriverManager.chromedriver().setup();
-			WebDriver driver = new ChromeDriver();
+			
+			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			
 			driver.get(URL);
@@ -73,8 +72,8 @@ public class DataProviderDemo1 {
 
 		public void readfromdataprovider( String URL, String email, String password) /* (String[] str) */
 		{
-			WebDriverManager.chromedriver().setup();
-			WebDriver driver = new ChromeDriver();
+			
+			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			
 			driver.get(URL); //str[0]
@@ -84,18 +83,21 @@ public class DataProviderDemo1 {
 			driver.findElement(By.id("input-email")).sendKeys(email); //str[1]
 			driver.findElement(By.id("input-password")).sendKeys(password); // str[0]
 			driver.findElement(By.xpath("//input[@value='Login']")).click();
-<<<<<<< HEAD
+
 			softassert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
-=======
+
 		softassert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
->>>>>>> 43e85b074e7065c69d2f125ef6c7383cfc83c617
+
 			System.out.println(URL + " "+ email + " "+ password);
 			
 		}
 		
 		
 		@AfterMethod
-		public void cleanup() {driver.quit();}
+		public void cleanup() 
+		{
+			driver.quit();
+		}
 		
 		@DataProvider(name = "TestDataforlogin")
 	public String[][] datasupplier() {
