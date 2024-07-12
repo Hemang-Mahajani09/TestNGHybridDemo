@@ -1,17 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-12T04:56:15 IST" name="Default suite" finished-at="2024-07-12T04:56:16 IST" duration-ms="1161">
+  <suite started-at="2024-07-12T17:07:03 IST" name="Suite" finished-at="2024-07-12T17:11:38 IST" duration-ms="275748">
     <groups>
     </groups>
-    <test started-at="2024-07-12T04:56:15 IST" name="Default test" finished-at="2024-07-12T04:56:16 IST" duration-ms="1161">
-      <class name="BasePackage.ReadDataFromExcel">
-        <test-method signature="Exceldata()[pri:0, instance:BasePackage.ReadDataFromExcel@165b2f7f]" started-at="2024-07-12T04:56:15 IST" name="Exceldata" finished-at="2024-07-12T04:56:16 IST" duration-ms="1073" status="PASS">
+    <test started-at="2024-07-12T17:07:03 IST" name="Test" finished-at="2024-07-12T17:11:38 IST" duration-ms="275748">
+      <class name="HybridFrameworkTestNG.Testcases.Search_Test">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:HybridFrameworkTestNG.Testcases.Search_Test@419a20a6]" started-at="2024-07-12T17:07:03 IST" name="launchbrowser" finished-at="2024-07-12T17:07:16 IST" duration-ms="12948" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Exceldata -->
-      </class> <!-- BasePackage.ReadDataFromExcel -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="SearchBlank()[pri:0, instance:HybridFrameworkTestNG.Testcases.Search_Test@419a20a6]" started-at="2024-07-12T17:07:16 IST" name="SearchBlank" finished-at="2024-07-12T17:07:19 IST" duration-ms="3449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchBlank -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:HybridFrameworkTestNG.Testcases.Search_Test@419a20a6]" started-at="2024-07-12T17:07:19 IST" name="launchbrowser" finished-at="2024-07-12T17:07:34 IST" duration-ms="14571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="SearchHONDA()[pri:0, instance:HybridFrameworkTestNG.Testcases.Search_Test@419a20a6]" started-at="2024-07-12T17:07:34 IST" name="SearchHONDA" finished-at="2024-07-12T17:07:38 IST" duration-ms="4826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchHONDA -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:HybridFrameworkTestNG.Testcases.Search_Test@419a20a6]" started-at="2024-07-12T17:07:38 IST" name="launchbrowser" finished-at="2024-07-12T17:07:54 IST" duration-ms="15890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method signature="SearchHP()[pri:0, instance:HybridFrameworkTestNG.Testcases.Search_Test@419a20a6]" started-at="2024-07-12T17:07:54 IST" name="SearchHP" finished-at="2024-07-12T17:07:59 IST" duration-ms="5038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchHP -->
+      </class> <!-- HybridFrameworkTestNG.Testcases.Search_Test -->
+      <class name="HybridFrameworkTestNG.Testcases.Login_Test">
+        <test-method is-config="true" signature="LaunchBrowser_Login()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:10:01 IST" name="LaunchBrowser_Login" finished-at="2024-07-12T17:10:16 IST" duration-ms="15063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser_Login -->
+        <test-method signature="verifyLoginWithInvalidCredentialsEmail()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:10:16 IST" name="verifyLoginWithInvalidCredentialsEmail" finished-at="2024-07-12T17:10:25 IST" duration-ms="8783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidCredentialsEmail -->
+        <test-method is-config="true" signature="browsercleanup()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:10:25 IST" name="browsercleanup" finished-at="2024-07-12T17:10:25 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsercleanup -->
+        <test-method is-config="true" signature="LaunchBrowser_Login()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:10:25 IST" name="LaunchBrowser_Login" finished-at="2024-07-12T17:10:40 IST" duration-ms="14919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser_Login -->
+        <test-method signature="verifyLoginWithInvalidCredentialsPassword()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:10:40 IST" name="verifyLoginWithInvalidCredentialsPassword" finished-at="2024-07-12T17:10:48 IST" duration-ms="8280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidCredentialsPassword -->
+        <test-method is-config="true" signature="browsercleanup()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:10:48 IST" name="browsercleanup" finished-at="2024-07-12T17:10:48 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsercleanup -->
+        <test-method is-config="true" signature="LaunchBrowser_Login()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:10:48 IST" name="LaunchBrowser_Login" finished-at="2024-07-12T17:11:03 IST" duration-ms="14830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser_Login -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:11:03 IST" name="verifyLoginWithValidCredentials" data-provider="SupplyTestData" finished-at="2024-07-12T17:11:13 IST" duration-ms="9698" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hemangmahajani10@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="browsercleanup()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:11:13 IST" name="browsercleanup" finished-at="2024-07-12T17:11:13 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsercleanup -->
+        <test-method is-config="true" signature="LaunchBrowser_Login()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:11:13 IST" name="LaunchBrowser_Login" finished-at="2024-07-12T17:11:28 IST" duration-ms="15141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser_Login -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:11:28 IST" name="verifyLoginWithValidCredentials" data-provider="SupplyTestData" finished-at="2024-07-12T17:11:38 IST" duration-ms="9999" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hemang2642IS@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="browsercleanup()[pri:0, instance:HybridFrameworkTestNG.Testcases.Login_Test@24faea88]" started-at="2024-07-12T17:11:38 IST" name="browsercleanup" finished-at="2024-07-12T17:11:38 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsercleanup -->
+      </class> <!-- HybridFrameworkTestNG.Testcases.Login_Test -->
+      <class name="HybridFrameworkTestNG.Testcases.RegisterTest">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:07:59 IST" name="LaunchBrowser" finished-at="2024-07-12T17:08:17 IST" duration-ms="17166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="InvalidRegister()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:08:17 IST" name="InvalidRegister" finished-at="2024-07-12T17:08:32 IST" duration-ms="15658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidRegister -->
+        <test-method is-config="true" signature="browsercleanup()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:08:32 IST" name="browsercleanup" finished-at="2024-07-12T17:08:32 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsercleanup -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:08:32 IST" name="LaunchBrowser" finished-at="2024-07-12T17:08:48 IST" duration-ms="15197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="InvalidRegisterNil()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:08:48 IST" name="InvalidRegisterNil" finished-at="2024-07-12T17:08:59 IST" duration-ms="11674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidRegisterNil -->
+        <test-method is-config="true" signature="browsercleanup()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:08:59 IST" name="browsercleanup" finished-at="2024-07-12T17:09:00 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsercleanup -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:09:00 IST" name="LaunchBrowser" finished-at="2024-07-12T17:09:15 IST" duration-ms="15682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="LaunchBrowser_Register()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:09:15 IST" name="LaunchBrowser_Register" finished-at="2024-07-12T17:09:30 IST" duration-ms="14740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser_Register -->
+        <test-method is-config="true" signature="browsercleanup()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:09:30 IST" name="browsercleanup" finished-at="2024-07-12T17:09:30 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsercleanup -->
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:09:30 IST" name="LaunchBrowser" finished-at="2024-07-12T17:09:46 IST" duration-ms="15382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="Register_AllFields()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:09:46 IST" name="Register_AllFields" finished-at="2024-07-12T17:10:01 IST" duration-ms="15058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register_AllFields -->
+        <test-method is-config="true" signature="browsercleanup()[pri:0, instance:HybridFrameworkTestNG.Testcases.RegisterTest@5b58ed3c]" started-at="2024-07-12T17:10:01 IST" name="browsercleanup" finished-at="2024-07-12T17:10:01 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browsercleanup -->
+      </class> <!-- HybridFrameworkTestNG.Testcases.RegisterTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
