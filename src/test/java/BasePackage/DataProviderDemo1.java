@@ -1,6 +1,5 @@
 package BasePackage;
 import org.testng.AssertJUnit;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
@@ -17,8 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DataProviderDemo1 {
-	WebDriver driver;
-	SoftAssert softassert= new SoftAssert();
+	
 
 	public class Login_TestNG {
 		SoftAssert softassert = new SoftAssert();
@@ -26,8 +24,8 @@ public class DataProviderDemo1 {
 		@Test
 		public void readvalidparameter( @Optional String URL ,String validemail, String validpassword )
 		{
-			
-		driver = new ChromeDriver();
+			WebDriverManager.chromedriver().setup();
+			WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			
 			
@@ -41,8 +39,8 @@ public class DataProviderDemo1 {
 			driver.findElement(By.xpath("//input[@value='Login']")).click();
 			driver.findElement(By.xpath("//a[normalize-space()='Edit your account information']"));
 			
-			softassert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
-			
+			AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+			driver.quit();
 			
 		}
 		@Parameters({"url", "invalidemail", "validpassword"})
@@ -60,8 +58,9 @@ public class DataProviderDemo1 {
 			driver.findElement(By.id("input-email")).sendKeys(invalidemail);
 			driver.findElement(By.id("input-password")).sendKeys(validpassword);
 			driver.findElement(By.xpath("//input[@value='Login']")).click();
-			softassert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
+			AssertJUnit.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
 			
+			driver.quit();
 		}
 		
 		
@@ -80,14 +79,11 @@ public class DataProviderDemo1 {
 			driver.findElement(By.id("input-email")).sendKeys(email); //str[1]
 			driver.findElement(By.id("input-password")).sendKeys(password); // str[0]
 			driver.findElement(By.xpath("//input[@value='Login']")).click();
-		softassert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
+			AssertJUnit.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
 			System.out.println(URL + " "+ email + " "+ password);
-			
+			driver.quit();
 		}
 		
-		
-		@AfterMethod
-		public void cleanup() {driver.quit();}
 		
 		@DataProvider(name = "TestDataforlogin")
 	public String[][] datasupplier() {
