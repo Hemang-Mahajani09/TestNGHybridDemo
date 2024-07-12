@@ -47,7 +47,7 @@ public class Login_Test extends BrowserSetup {
 
 	@DataProvider(name= "SupplyTestData")
 	public Object [][] SupplyTestData() throws IOException{
-		Object[][] data = {{"hemangmahajani10@gmail.com","12345"},{"Hemang2642IS@gmail.com","12345"}};
+		Object[][] data = {{"Hemang2846IS@gmail.com","12345"},{"Hemang2642IS@gmail.com","12345"}};
 		
 		return data;
 				
@@ -61,7 +61,6 @@ public class Login_Test extends BrowserSetup {
 		driver.findElement(By.id("input-email")).sendKeys(email);
 		driver.findElement(By.id("input-password")).sendKeys(password);
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
-		
 		
 		softassert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		System.out.println("Login passed");	
