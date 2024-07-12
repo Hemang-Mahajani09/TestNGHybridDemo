@@ -61,7 +61,7 @@ public class Login_Test extends BrowserSetup {
 		driver.findElement(By.id("input-email")).sendKeys(email);
 		driver.findElement(By.id("input-password")).sendKeys(password);
 		driver.findElement(By.xpath("//input[@value='Login']")).click();
-		driver.findElement(By.xpath("//a[normalize-space()='Edit your account information']"));
+		
 		
 		softassert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 		System.out.println("Login passed");	

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="BasePackage.ReadDataFromExcel" class="method navigator-link" hash-for-method="Exceldata">Exceldata</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="HybridFrameworkTestNG.Testcases.Login_Test" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials(Hemang2642IS@gmail.com, 12345)">verifyLoginWithValidCredentials(Hemang2642IS@gmail.com, 12345)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="HybridFrameworkTestNG.Testcases.Login_Test" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials(hemangmahajani10@gmail.com, 12345)">verifyLoginWithValidCredentials(hemangmahajani10@gmail.com, 12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +126,23 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">BasePackage.ReadDataFromExcel</span>
+              <span class="class-name">HybridFrameworkTestNG.Testcases.Login_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Exceldata">
-                  </a> <!-- Exceldata -->
-                  <span class="method-name">Exceldata</span>
+                  <a name="verifyLoginWithValidCredentials(Hemang2642IS@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentials(Hemang2642IS@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <span class="parameters">(Hemang2642IS@gmail.com,12345)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials(hemangmahajani10@gmail.com, 12345)">
+                  </a> <!-- verifyLoginWithValidCredentials(hemangmahajani10@gmail.com, 12345) -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <span class="parameters">(hemangmahajani10@gmail.com,12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +150,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/fh/n7qfz_5x5ln1jfstvz3f2my00000gn/T/testng-eclipse-1687560994/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/fh/n7qfz_5x5ln1jfstvz3f2my00000gn/T/testng-eclipse-1415182401/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +159,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;BasePackage.ReadDataFromExcel&quot;&gt;
+      &lt;class name=&quot;HybridFrameworkTestNG.Testcases.Login_Test&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;Exceldata&quot;/&gt;
+          &lt;include name=&quot;verifyLoginWithValidCredentials&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- BasePackage.ReadDataFromExcel --&gt;
+      &lt;/class&gt; &lt;!-- HybridFrameworkTestNG.Testcases.Login_Test --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -189,16 +203,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Exceldata')
-data.setCell(0, 2, 'BasePackage.ReadDataFromExcel')
-data.setCell(0, 3, 1073);
+data.setCell(0, 1, 'verifyLoginWithValidCredentials')
+data.setCell(0, 2, 'HybridFrameworkTestNG.Testcases.Login_Test')
+data.setCell(0, 3, 7821);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLoginWithValidCredentials')
+data.setCell(1, 2, 'HybridFrameworkTestNG.Testcases.Login_Test')
+data.setCell(1, 3, 7804);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,9 +231,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">HybridFrameworkTestNG.Testcases.Login_Test</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyLoginWithInvalidCredentialsEmail</span>
+                <br/>
+                <span class="ignored-method-name">verifyLoginWithInvalidCredentialsPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -224,11 +251,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">BasePackage.ReadDataFromExcel</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Exceldata</span>
+              <div class="chronological-class-name">HybridFrameworkTestNG.Testcases.Login_Test</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser_Login</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials(hemangmahajani10@gmail.com, 12345)</span>
+                <span class="method-start">14867 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browsercleanup</span>
+                <span class="method-start">22708 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchBrowser_Login</span>
+                <span class="method-start">22870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials(Hemang2642IS@gmail.com, 12345)</span>
+                <span class="method-start">35565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browsercleanup</span>
+                <span class="method-start">43381 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
