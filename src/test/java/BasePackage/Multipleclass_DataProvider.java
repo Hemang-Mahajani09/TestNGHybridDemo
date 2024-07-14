@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Multipleclass_DataProvider {
 
-	@Test(dataProvider= "TestDataforlogin", dataProviderClass = dataproviderclass.class)
+	//(dataProvider= "TestDataforlogin", dataProviderClass = dataproviderclass.class)
 
 	public void readfromdataprovider( String URL, String email, String password) throws InterruptedException /* (String[] str) */
 	{
