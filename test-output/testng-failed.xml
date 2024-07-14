@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HybridFrameworkTestNG.Testcases.Login_Test">
+      <class name="BasePackage.DataProviderDemo1$Login_TestNG">
         <methods>
-          <include name="browsercleanup"/>
-          <include name="LaunchBrowser_Login"/>
-          <include name="verifyLoginWithValidCredentials" invocation-numbers="1"/>
+          <include name="readvalidparameter"/>
+          <include name="readinvalidparameter"/>
         </methods>
-      </class> <!-- HybridFrameworkTestNG.Testcases.Login_Test -->
+      </class> <!-- BasePackage.DataProviderDemo1$Login_TestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
