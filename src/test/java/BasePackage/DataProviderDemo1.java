@@ -39,7 +39,7 @@ public class DataProviderDemo1 {
 			driver.findElement(By.xpath("//input[@value='Login']")).click();
 			driver.findElement(By.xpath("//a[normalize-space()='Edit your account information']"));
 			
-			AssertJUnit.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+			softassert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
 			driver.quit();
 			
 		}
@@ -58,7 +58,7 @@ public class DataProviderDemo1 {
 			driver.findElement(By.id("input-email")).sendKeys(invalidemail);
 			driver.findElement(By.id("input-password")).sendKeys(validpassword);
 			driver.findElement(By.xpath("//input[@value='Login']")).click();
-			AssertJUnit.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
+			softassert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
 			
 			driver.quit();
 		}
@@ -66,7 +66,7 @@ public class DataProviderDemo1 {
 		
 		@Test(dataProvider= "TestDataforlogin")
 
-		public void readfromdataprovider( String URL, String email, String password) /* (String[] str) */
+		public void readfromdataprovider( String URL, String email, String password) throws InterruptedException /* (String[] str) */
 		{
 			WebDriverManager.chromedriver().setup();
 			WebDriver driver = new ChromeDriver();
@@ -79,7 +79,8 @@ public class DataProviderDemo1 {
 			driver.findElement(By.id("input-email")).sendKeys(email); //str[1]
 			driver.findElement(By.id("input-password")).sendKeys(password); // str[0]
 			driver.findElement(By.xpath("//input[@value='Login']")).click();
-			AssertJUnit.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
+			Thread.sleep(3000);
+			softassert.assertTrue(driver.findElement(By.xpath("//div[contains(@class,'alert-dismissibl')]")).getText().contains("No match for E-Mail Address and/or Password"));
 			System.out.println(URL + " "+ email + " "+ password);
 			driver.quit();
 		}

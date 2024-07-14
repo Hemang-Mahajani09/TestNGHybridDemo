@@ -5,7 +5,8 @@
     <classes>
       <class name="BasePackage.DataProviderDemo1$Login_TestNG">
         <methods>
-          <include name="readfromdataprovider" invocation-numbers="0"/>
+          <include name="readvalidparameter"/>
+          <include name="readinvalidparameter"/>
         </methods>
       </class> <!-- BasePackage.DataProviderDemo1$Login_TestNG -->
     </classes>
