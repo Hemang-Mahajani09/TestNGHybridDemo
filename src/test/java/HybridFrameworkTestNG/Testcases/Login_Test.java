@@ -49,7 +49,7 @@ public class Login_Test extends BrowserSetup {
 	public Object [][] SupplyTestData() throws IOException{
 		Object[][] data = {{"hemangmahajani10@gmail.com","12345"},{"Hemang2642IS@gmail.com","12345"}};
 		
-		return data;
+		return data; // login test
 				
 	}
 	
